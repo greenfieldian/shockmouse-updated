@@ -14,7 +14,7 @@ const FourOhFour = () => (
     }}
   >
     <Box as="h1" sx={{ color: 'accent' }}>
-      404
+      401
     </Box>
     <Icon
       svg="playful-cat"
