@@ -136,7 +136,7 @@ const Index = () => {
                   Beginning with a deep understanding of your business, we develop a clear basis from which to grow. Backed up by our experienced advisors, we harness historical data and modern practices to transform and propel your business to future growth.
                 </>
               ),
-              icon: 'barrel-logo',
+              icon: 'advisory',
               iconSx: { mt: '-0.25rem', width: ['5rem', null, null, '7rem'] },
               link: '/business-advisory/',
               title: <>Advisory & Transformation</>,
@@ -147,10 +147,10 @@ const Index = () => {
                   We firmly believe that a strong digital footprint is vital to an organization's future growth. Having experienced every stage in digital, we’re able to analyze, build and deploy digital solutions that help you stay agile amongst your competitors.
                 </>
               ),
-              icon: 'kc-logo',
+              icon: 'digital',
               iconSx: { mt: '0.75rem', width: ['9rem', null, null, '12rem'] },
               link: '/customer-experience/',
-              title: <>Technology</>,
+              title: <>Digital</>,
             },
             {
               description: (
@@ -158,7 +158,7 @@ const Index = () => {
                   We help the teams that influence the customer journey deliver consistent, profitable results. Through strong operational structures, technology systems and management support, we enable your sales and marketing staff to do what they do best - create customer journeys that lead to lasting relationships.
                 </>
               ),
-              icon: 'programmer',
+              icon: 'marketing',
               iconSx: { width: ['5rem', null, null, '7rem'] },
               link: '/innovation/',
               title: <>Marketing & Sales</>,
