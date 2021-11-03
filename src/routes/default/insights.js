@@ -1,11 +1,9 @@
 import Box from '@spraoi/base/Box';
 import React from 'react';
 import ContactCTA from '../../components/ContactCTA';
-import LinkList from '../../components/LinkList';
 import Section from '../../components/Section';
 
 const Perspectives = () => {
-  const articles = useArticles();
 
   return (
     <>
@@ -27,20 +25,7 @@ const Perspectives = () => {
         </Box>
       </Section>
       <Section sx={{ px: [null, null, 7] }}>
-        <LinkList
-          items={articles
-            .filter((article) => !article.frontmatter.isAnnouncement)
-            .map((article) => ({
-              link: `/perspectives${article.fields.slug}`,
-              subText: (
-                <>
-                  {article.frontmatter.datePublished}
-                </>
-              ),
-              title: article.frontmatter.title,
-            }))}
-          titleAs="h2"
-        />
+        
       </Section>
       <ContactCTA />
     </>
