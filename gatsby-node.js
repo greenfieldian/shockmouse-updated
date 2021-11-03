@@ -15,7 +15,29 @@ exports.createPages = ({
   /* For Articles */
   graphql(`
     {
-      
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(articles)/" } }
+        sort: { order: DESC, fields: [frontmatter___datePublished] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              isAnnouncement
+            }
+          }
+        }
+      }
+      allPeopleYaml {
+        edges {
+          node {
+            id
+          }
+        }
+      }
     }
   `).then((result) => {
     if (result.errors) return Promise.reject(result.errors);
