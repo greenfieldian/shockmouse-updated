@@ -3,19 +3,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
 
 const ServicesPage = ({ location: { pathname } }) => (
   <>
-    <SEO
-      description="Innovation, integration and data services to support transformative initiatives."
-      pathname={pathname}
-      title="Services"
-    />
     <Section sx={{ textAlign: [null, null, 'center'] }}>
       <Box as="h1" sx={{ fontSize: [5, null, null, 6] }}>
-        Innovation as a Service
+        Marketing & Sales
       </Box>
       <Box
         as="p"

@@ -8,17 +8,11 @@ import { FORM_ERROR } from 'final-form';
 import { Field, Form as FinalForm } from 'react-final-form';
 import { composeValidations, email, required } from '@spraoi/validations';
 import Icon from '../../components/Icon';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
 import config from '../../config.json';
 
 const Contact = ({ location: { pathname } }) => (
   <>
-    <SEO
-      description="Want to start a conversation? We would love to hear from you regarding our product offerings and services."
-      pathname={pathname}
-      title="Let’s Talk"
-    />
     <Section
       sx={{
         display: [null, null, null, 'flex'],

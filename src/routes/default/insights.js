@@ -2,19 +2,13 @@ import Box from '@spraoi/base/Box';
 import React from 'react';
 import ContactCTA from '../../components/ContactCTA';
 import LinkList from '../../components/LinkList';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
-import useArticles from '../../effects/use-articles';
 
 const Perspectives = () => {
   const articles = useArticles();
 
   return (
     <>
-      <SEO
-        description="We have strong opinions on the market and technology’s role in it."
-        title="Insights"
-      />
       <Section sx={{ textAlign: [null, null, 'center'] }}>
         <h1>Company Insights</h1>
         <Box
@@ -37,14 +31,9 @@ const Perspectives = () => {
           items={articles
             .filter((article) => !article.frontmatter.isAnnouncement)
             .map((article) => ({
-              image: article.author.image,
               link: `/perspectives${article.fields.slug}`,
               subText: (
                 <>
-                  {article.author.givenName} {article.author.familyName}
-                  <Box as="span" sx={{ mx: 2 }}>
-                    &middot;
-                  </Box>
                   {article.frontmatter.datePublished}
                 </>
               ),

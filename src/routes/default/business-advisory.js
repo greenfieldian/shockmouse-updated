@@ -5,29 +5,14 @@ import { Link } from 'gatsby';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
 import IconFigure from '../../components/IconFigure';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
 // import ArrowLink from '../../components/ArrowLink';
 
 const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
   <>
-    <SEO
-      description="Patent-pending continuous delivery platform enabling insurance specific machine learning models."
-      pathname={pathname}
-      title="Machine Learning"
-    />
     <Section sx={{ pb: 0, textAlign: [null, null, 'center'] }}>
-      <Icon
-        svg="barrel-logo"
-        sx={{
-          mb: 5,
-          mt: ['-1.5rem', null, '-2.25rem'],
-          mx: [null, null, 'auto'],
-        }}
-        width={['7rem', null, '10rem']}
-      />
       <Box as="h1" sx={{ fontSize: [5, null, null, 6] }}>
-        Machine Learning Platform
+        Advisory & Transformation
       </Box>
       <Box
         as="p"

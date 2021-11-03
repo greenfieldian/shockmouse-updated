@@ -4,24 +4,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
 
 const CustomerExperienceSolutionsPage = ({ location: { pathname } }) => (
   <>
-    <SEO
-      description="Microservices architected insurance customer experience portal solution."
-      pathname={pathname}
-      title="Customer Experience"
-    />
     <Section sx={{ textAlign: [null, null, 'center'] }}>
-      <Icon
-        svg="kc-logo"
-        sx={{ mb: 5, mx: [null, null, 'auto'] }}
-        width={['13rem', null, '17rem']}
-      />
       <Box as="h1" sx={{ fontSize: [5, null, null, 6] }}>
-        Customer Experience Infrastructure
+        Digital
       </Box>
       <Box
         as="p"

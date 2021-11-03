@@ -2,28 +2,18 @@ import Box from '@spraoi/base/Box';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'gatsby';
-import Avatar from '../../components/Avatar';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
 import LinkList from '../../components/LinkList';
 import Map from '../../components/Map';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
 import landMap from '../../data/maps/land.json';
-import usePeople from '../../effects/use-people';
 
 const AboutUsPage = ({ location: { pathname } }) => {
-  const people = usePeople();
 
   return (
     <>
-      <SEO
-        description="Spraoi is an insurance technology solutions provider with a focus on machine learning."
-        pathname={pathname}
-        title="About Us"
-      />
       <Section>
-        <h1>About Shockmouse</h1>
         <Box
           sx={{
             alignItems: 'center',

@@ -6,20 +6,12 @@ import ArrowLink from '../../components/ArrowLink';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
 import IconFigure from '../../components/IconFigure';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
-import useArticles from '../../effects/use-articles';
 
 const Index = () => {
-  const articles = useArticles();
-  const latestAnnouncement = articles.find((a) => a.frontmatter.isAnnouncement);
 
   return (
     <>
-      <SEO
-        description="Shockmouse Media is a digital consulting firm leveraging technology to transform our partner organizations."
-        title="Shockmouse Media | Digital Consulting Firm"
-      />
       <Section
         sx={{
           display: [null, null, null, 'flex'],
@@ -40,7 +32,6 @@ const Index = () => {
               zIndex: -1,
             }}
           />
-          <h1>Why Shockmouse?</h1>
           <Box
             as="p"
             sx={{
@@ -50,7 +41,7 @@ const Index = () => {
               my: 5,
             }}
           >
-            We believe that organizations change by doing, so our approach to digital is intensely practical, iterative, human-centered, and fast. Having experienced every stage of digital, we’re able to recognize historical patterns while remaining agile to innovation. 
+            We believe that organizations change by doing, so our approach to digital is intensely practical, iterative, human-centered, and fast. Having experienced every stage of digital, we’re able to recognize historical patterns while remaining agile. 
             <ArrowLink link="/about-us">Read more</ArrowLink>
           </Box>
           <Box

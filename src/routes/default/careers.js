@@ -2,19 +2,12 @@ import Box from '@spraoi/base/Box';
 import React from 'react';
 import ContactCTA from '../../components/ContactCTA';
 import LinkList from '../../components/LinkList';
-import SEO from '../../components/SEO';
 import Section from '../../components/Section';
-import useArticles from '../../effects/use-articles';
 
 const Careers = () => {
-  const articles = useArticles();
 
   return (
     <>
-      <SEO
-        description="News travels fast these days. Stay apprised of all things Spraoi here."
-        title="Work For Us"
-      />
       <Section sx={{ textAlign: [null, null, 'center'] }}>
         <Box as="h1" sx={{ fontSize: [5, null, 6] }}>
           Announcements
