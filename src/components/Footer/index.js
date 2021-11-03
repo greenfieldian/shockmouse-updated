@@ -118,7 +118,7 @@ const Footer = () => (
             },
             {
               icon: 'instagram',
-              link: 'https://www.instagram.com/shockmousemedi',
+              link: 'https://www.instagram.com/shockmousemedia',
             },
           ].map((item) => (
             <Box key={item.link} as="li" sx={{}}>
