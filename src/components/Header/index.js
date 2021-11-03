@@ -28,7 +28,7 @@ const Header = () => {
       <Link to="/">
         <Icon
           alt="spraoi"
-          svg="spraoi-logo"
+          svg="shockmouse-logo"
           sx={{ color: 'text.primary', mt: [2, null, 3], width: '10.25rem' }}
         />
       </Link>
@@ -57,11 +57,11 @@ const Header = () => {
           }}
         >
           {[
-            ['/machine-learning/', 'Machine Learning'],
-            ['/customer-experience/', 'Customer Experience'],
-            ['/innovation/', 'Innovation'],
+            ['/business-advisory/', 'Business Advisory'],
+            ['/digital/', 'Digital'],
+            ['/marketing-sales/', 'Marketing & Sales'],
             ['/about-us/', 'About Us'],
-            ['/perspectives/', 'Perspectives'],
+            ['/insights/', 'Insights'],
           ].map(([link, text]) => (
             <Box
               key={link}

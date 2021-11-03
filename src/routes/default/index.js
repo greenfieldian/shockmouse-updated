@@ -17,8 +17,8 @@ const Index = () => {
   return (
     <>
       <SEO
-        description="Spraoi was founded by Big Four Insurance Consulting and Silicon Valley leaders to bring disruptive capabilities to insurance consumers, agents and carriers."
-        title="Spraoi - an insurtech solutions provider with a focus on ML"
+        description="Shockmouse Media is a digital consulting firm leveraging technology to transform our partner organizations."
+        title="Shockmouse Media | Digital Consulting Firm"
       />
       <Section
         sx={{
@@ -40,7 +40,7 @@ const Index = () => {
               zIndex: -1,
             }}
           />
-          <h1>Why Spraoi?</h1>
+          <h1>Why Shockmouse?</h1>
           <Box
             as="p"
             sx={{
@@ -50,11 +50,7 @@ const Index = () => {
               my: 5,
             }}
           >
-            We combine our domain experience with deep machine learning
-            capabilities to address the unique challenges of Group Benefits, and
-            Life and Annuities carriers. We have a proven track record helping
-            carriers optimize results and deliver an improved customer
-            experience in everything from new business, enrollment to claims.
+            We believe that organizations change by doing, so our approach to digital is intensely practical, iterative, human-centered, and fast. Having experienced every stage of digital, we’re able to recognize historical patterns while remaining agile to innovation. 
             <ArrowLink link="/about-us">Read more</ArrowLink>
           </Box>
           <Box
@@ -65,13 +61,6 @@ const Index = () => {
               pt: 2,
             }}
           >
-            <Button
-              link={`/announcements${latestAnnouncement.fields.slug}`}
-              sx={{ maxWidth: [null, null, 'auto'], mr: [null, null, 5] }}
-              variant="buttons.secondary"
-            >
-              Press Release
-            </Button>
             <Button
               link="/contact/"
               sx={{ maxWidth: [null, null, 'auto'], mt: [5, null, 0] }}
@@ -135,7 +124,7 @@ const Index = () => {
       </Section>
       <Section>
         <Box sx={{ textAlign: [null, null, 'center'] }}>
-          <h2>Solutions and Innovation</h2>
+          <h2>Solutions</h2>
         </Box>
       </Section>
       <Section sx={{ px: [null, null, 7] }}>
@@ -144,44 +133,35 @@ const Index = () => {
             {
               description: (
                 <>
-                  Barrel is an end to end data platform with insurance specific,
-                  reusable rules and schemas to accelerate machine learning
-                  model development across the Group Benefit value chain from
-                  Underwriting, Enrollment, EOI, New Business to Claims.
+                  Beginning with a deep understanding of your business, we develop a clear basis from which to grow. Backed up by our experienced advisors, we harness historical data and modern practices to transform and propel your business to future growth.
                 </>
               ),
               icon: 'barrel-logo',
               iconSx: { mt: '-0.25rem', width: ['5rem', null, null, '7rem'] },
-              link: '/machine-learning/',
-              title: <>Machine Learning&nbsp;Platform</>,
+              link: '/business-advisory/',
+              title: <>Advisory & Transformation</>,
             },
             {
               description: (
                 <>
-                  Kwikcover is a machine learning enabled customer experience
-                  infrastructure that offers sold case setup, eligibility
-                  management, enrollment, billing and claims capabilities for
-                  employer sponsor, employees and carrier’s operations role
-                  based personas.
+                  We firmly believe that a strong digital footprint is vital to an organization's future growth. Having experienced every stage in digital, we’re able to analyze, build and deploy digital solutions that help you stay agile amongst your competitors.
                 </>
               ),
               icon: 'kc-logo',
               iconSx: { mt: '0.75rem', width: ['9rem', null, null, '12rem'] },
               link: '/customer-experience/',
-              title: <>Customer Experience Infrastructure</>,
+              title: <>Technology</>,
             },
             {
               description: (
                 <>
-                  We take delivery accountability from concept through
-                  execution—eliminating technology as the
-                  impediment&nbsp;to&nbsp;progress.
+                  We help the teams that influence the customer journey deliver consistent, profitable results. Through strong operational structures, technology systems and management support, we enable your sales and marketing staff to do what they do best - create customer journeys that lead to lasting relationships.
                 </>
               ),
               icon: 'programmer',
               iconSx: { width: ['5rem', null, null, '7rem'] },
               link: '/innovation/',
-              title: <>Innovation as a Service</>,
+              title: <>Marketing & Sales</>,
             },
           ].map((item) => (
             <Box

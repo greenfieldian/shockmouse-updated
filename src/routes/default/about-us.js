@@ -23,7 +23,7 @@ const AboutUsPage = ({ location: { pathname } }) => {
         title="About Us"
       />
       <Section>
-        <h1>About Spraoi</h1>
+        <h1>About Shockmouse</h1>
         <Box
           sx={{
             alignItems: 'center',
@@ -32,15 +32,7 @@ const AboutUsPage = ({ location: { pathname } }) => {
           }}
         >
           <Box as="p" sx={{ fontSize: 4, lineHeight: 1, mt: 5 }}>
-            We are a Group Benefits, and Life and Annuities focused technology
-            firm. We have grown significantly since our inception in June 2017.
-            Our deep domain expertise, that enables us to distinguish between
-            individual, annuities, group benefits, voluntary and worksite
-            requirements in different market segments, has allowed us to develop
-            significant technology IP. We believe transformational results are
-            delivered within the carrier’s existing eco-system using a
-            data-centric machine learning approach to provide insights at key
-            decision points.
+          We're a business consulting firm leveraging technology to provide rapid growth to the organizations we serve. Our teams have the autonomy to move fast and do what's right for our clients, making us more personal and nimble than traditional consulting firms. Through our lean process, we're able to craft solutions that minimize waste, promoting long-term growth. 
           </Box>
           <Icon
             svg="team-spirit"
@@ -64,10 +56,7 @@ const AboutUsPage = ({ location: { pathname } }) => {
             mx: 'auto',
           }}
         >
-          We have a global team with an established onsite/offshore delivery
-          model. US practitioners reside across the country. We have a
-          technology center in Bengaluru, with scale partners in
-          Mumbai&nbsp;and&nbsp;Mysore.
+          Our reach spans the globe. With technicians and strategists spanning the country, we're able to connect on a local and global scale.
         </Box>
       </Section>
       <Section sx={{ display: [null, null, 'flex'], pt: 0 }}>
@@ -76,42 +65,12 @@ const AboutUsPage = ({ location: { pathname } }) => {
             annotationColor="accentSecondary"
             geography={landMap}
             markers={[
-              /* {
-                annotationProps: { dx: 40, dy: 0 },
-                annotationTextProps: { x: 10 },
-                coordinates: [-122.4194, 37.7749],
-                name: 'San Fransisco',
-              }, */
               {
                 annotationProps: { dx: 40, dy: 0 },
                 annotationTextProps: { x: 10 },
-                coordinates: [-122.681427, 45.516022],
-                name: 'Portland',
-              },
-              {
-                annotationProps: { curve: 1, dx: -30, dy: -40 },
-                annotationTextProps: { textAnchor: 'end', x: -10 },
-                coordinates: [-74.005974, 40.712776],
-                name: 'New York',
-              },
-              {
-                annotationProps: { curve: -1, dx: -25, dy: 25 },
-                annotationTextProps: { textAnchor: 'end', x: -10 },
-                coordinates: [-75.165619, 39.951061],
-                name: 'Philadelphia',
-              },
-              {
-                annotationProps: { dx: -40, dy: 0 },
-                annotationTextProps: { textAnchor: 'end', x: -10 },
-                coordinates: [-84.387985, 33.748997],
-                name: 'Atlanta',
-              },
-              {
-                annotationProps: { curve: -1, dx: -40, dy: 25 },
-                annotationTextProps: { textAnchor: 'end', x: -10 },
-                coordinates: [-87.629799, 41.878113],
-                name: 'Chicago',
-              },
+                coordinates: [-86.7816, 36.1627],
+                name: 'Nashville',
+              }, 
               {
                 annotationProps: { curve: 1, dx: -37, dy: -40 },
                 annotationTextProps: { textAnchor: 'end', x: -10 },
@@ -140,32 +99,20 @@ const AboutUsPage = ({ location: { pathname } }) => {
               {
                 annotationProps: { dx: -40, dy: 0 },
                 annotationTextProps: { textAnchor: 'end', x: -10 },
-                coordinates: [72.877655, 19.075983],
-                name: 'Mumbai',
-              },
-              {
-                annotationProps: { dx: -40, dy: 0 },
-                annotationTextProps: { textAnchor: 'end', x: -10 },
-                coordinates: [76.653931, 12.30844],
-                name: 'Mysuru',
-              },
-              {
-                annotationProps: { dx: 40, dy: 0 },
-                annotationTextProps: { x: 10 },
-                coordinates: [77.594566, 12.971599],
-                name: 'Bengaluru',
+                coordinates: [0.1276, 51.5072],
+                name: 'London',
               },
             ]}
             projectionConfig={{
-              center: [78, 17],
-              scale: 700,
+              center: [8, 47],
+              scale: 400,
             }}
             viewHeight={400}
             viewWidth={720}
           />
         </Box>
       </Section>
-      <Section sx={{ textAlign: [null, null, 'center'] }}>
+      {/*<Section sx={{ textAlign: [null, null, 'center'] }}>
         <h2>Founders</h2>
         <Box
           as="p"
@@ -252,9 +199,9 @@ const AboutUsPage = ({ location: { pathname } }) => {
               </Box>
             </Box>
           ))}
-      </Section>
+        </Section>*/}
       <Section sx={{ textAlign: [null, null, 'center'] }}>
-        <h2>Alliances &amp; Eminence</h2>
+        <h2>Our Partners</h2>
         <Box
           as="p"
           sx={{
@@ -264,50 +211,48 @@ const AboutUsPage = ({ location: { pathname } }) => {
             mx: 'auto',
           }}
         >
-          We have developed formal relationships with leading firms to expand
-          our presence. We have been recognized by the industry, conducted
-          board-level presentations for client sponsors and are recognized
-          leaders in the insurance market.
+          We've developed partnerships with nearly every major CRM, analytics, development and digital experience partner. Here are a few of the many solutions providers we work with on a daily basis.
         </Box>
       </Section>
       <Section sx={{ px: [null, null, 7] }}>
         <LinkList
           items={[
             {
-              icon: 'insurance-cio-outlook-logo',
+              icon: 'aws-partner',
               link:
-                'https://artificial-intelligence.insuranceciooutlook.com/vendors/top-artificial-intelligence-companies-2018.html',
-              title: 'Top 10 AI Solution Providers',
+                'https://aws.amazon.com/partners/consulting/',
+              title: 'AWS Consulting Partner',
             },
             {
-              icon: 'limra-logo',
+              icon: 'hubspot-logo',
               link:
-                'https://www.limra.com/en/events/conferences/2019/2019-enrollment-technology-strategy-seminar/',
-              title: 'Main Stage Speaker on ML',
+                'https://ecosystem.hubspot.com/marketplace/solutions',
+              title: 'Hubspot Solutions Partner',
             },
             {
-              icon: 'cio-applications-logo',
+              icon: 'salesforce-partner',
               link:
-                'https://machine-learning.cioapplications.com/vendors/top-25-machine-learning-solution-companies-2019-rid-160.html',
-              title: 'Top 25 ML Solutions Provider',
+                'https://partners.salesforce.com/',
+              title: 'Salesforce Consulting Partner',
             },
             {
-              icon: 'andesa-logo',
+              icon: 'wp-engine-partner',
               link:
-                'https://andesaservices.com/blog/lessons-for-the-new-normal-andesas-ninth-client-forum/',
-              title: 'Speaker at User Conference',
+                'https://wpengine.com/partners/agencies/',
+              title: 'WP Engine Agency Partner',
             },
             {
-              icon: 'insurance-cio-outlook-logo',
+              icon: 'zapier-partner',
               link:
-                'https://insurtech-startups.insuranceciooutlook.com/vendors/top-insurtech-startups-2019.html',
-              title: 'Top 10 Insurtech Startups',
+                'https://zapier.com/experts',
+              title: 'Zapier Integration Partner',
             },
           ]}
           split
           titleAs="h3"
         />
       </Section>
+      {/*
       <Section sx={{ pt: 0, px: [0, null, 7] }}>
         <Box
           sx={{
@@ -340,7 +285,7 @@ const AboutUsPage = ({ location: { pathname } }) => {
             </Box>
           </Box>
         </Box>
-      </Section>
+          </Section>*/}
       <ContactCTA />
     </>
   );

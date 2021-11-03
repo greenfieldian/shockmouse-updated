@@ -20,17 +20,17 @@ const Footer = () => (
           {
             heading: 'Solutions & Innovation',
             links: [
-              ['/machine-learning/', 'Machine Learning'],
-              ['/customer-experience/', 'Customer Experience'],
-              ['/innovation/', 'Innovation'],
+              ['/business-advisory/', 'Advisory & Transformation'],
+              ['/digital/', 'Digital'],
+              ['/marketing-sales/', 'Marketing & Sales'],
             ],
           },
           {
             heading: 'Company',
             links: [
               ['/about-us/', 'About Us'],
-              ['/perspectives/', 'Perspectives'],
-              ['/announcements/', 'Announcements'],
+              ['/insights/', 'Insights'],
+              ['/careers/', 'Careers'],
               ['/contact/', 'Contact Us'],
             ],
           },
@@ -88,7 +88,7 @@ const Footer = () => (
       >
         <Link to="/">
           <Icon
-            svg="spraoi-logo"
+            svg="shockmouse-logo"
             sx={{ color: 'offWhite', mt: 3, width: '10.25rem' }}
           />
         </Link>
@@ -106,19 +106,19 @@ const Footer = () => (
           {[
             {
               icon: 'linkedin',
-              link: 'https://www.linkedin.com/company/spraoi.ai',
+              link: 'https://www.linkedin.com/company/shockmousemedia',
             },
             {
               icon: 'twitter',
-              link: 'https://twitter.com/spraoit',
+              link: 'https://twitter.com/shockmousemedia',
             },
             {
               icon: 'facebook',
-              link: 'https://www.facebook.com/spraoisoftware',
+              link: 'https://www.facebook.com/shockmousemedia',
             },
             {
               icon: 'instagram',
-              link: 'https://www.instagram.com/spraoi_tech',
+              link: 'https://www.instagram.com/shockmousemedia',
             },
           ].map((item) => (
             <Box key={item.link} as="li" sx={{}}>

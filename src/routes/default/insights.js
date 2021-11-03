@@ -13,10 +13,10 @@ const Perspectives = () => {
     <>
       <SEO
         description="We have strong opinions on the market and technology’s role in it."
-        title="Perspectives"
+        title="Insights"
       />
       <Section sx={{ textAlign: [null, null, 'center'] }}>
-        <h1>Perspectives</h1>
+        <h1>Company Insights</h1>
         <Box
           as="p"
           sx={{

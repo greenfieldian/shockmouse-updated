@@ -6,14 +6,14 @@ import SEO from '../../components/SEO';
 import Section from '../../components/Section';
 import useArticles from '../../effects/use-articles';
 
-const Announcements = () => {
+const Careers = () => {
   const articles = useArticles();
 
   return (
     <>
       <SEO
         description="News travels fast these days. Stay apprised of all things Spraoi here."
-        title="Announcements"
+        title="Work For Us"
       />
       <Section sx={{ textAlign: [null, null, 'center'] }}>
         <Box as="h1" sx={{ fontSize: [5, null, 6] }}>
@@ -50,4 +50,4 @@ const Announcements = () => {
   );
 };
 
-export default Announcements;
+export default Careers;
