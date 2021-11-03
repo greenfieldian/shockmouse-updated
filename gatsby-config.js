@@ -58,6 +58,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
     'gatsby-plugin-meta-redirect',
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `63n4orvvac54`,
+        accessToken: `F4QHqWzR4PT-8iCzc0MT9dmp7nWVZXinNW-mVkQlBnA`,
+      },
+    },
   ],
   siteMetadata: {
     banner: '/images/banner-1200x628.png',
