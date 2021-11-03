@@ -8,59 +8,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   createNodeField({ name: 'slug', node, value: slug });
 };
 
-exports.createPages = ({
-  actions: { createPage, createRedirect },
-  graphql,
-}) => {
-  /* For Articles */
-  graphql(`
-    {
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(articles)/" } }
-        sort: { order: DESC, fields: [frontmatter___datePublished] }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              isAnnouncement
-            }
-          }
-        }
-      }
-      allPeopleYaml {
-        edges {
-          node {
-            id
-          }
-        }
-      }
-    }
-  `).then((result) => {
-    if (result.errors) return Promise.reject(result.errors);
-
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      const prefix = node.frontmatter.isAnnouncement
-        ? 'announcements'
-        : 'perspectives';
-
-      createPage({
-        component: path.resolve('src/components/ArticleLayout/index.js'),
-        context: { slug: node.fields.slug },
-        path: `/${prefix}${node.fields.slug}`,
-      });
-
-      if (!node.frontmatter.isAnnouncement) {
-        createRedirect({
-          fromPath: `/articles${node.fields.slug}`,
-          isPermanent: true,
-          toPath: `/${prefix}${node.fields.slug}`,
-        });
-      }
-    });
 
     result.data.allPeopleYaml.edges.forEach(({ node }) => {
       createPage({
