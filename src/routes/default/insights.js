@@ -27,8 +27,7 @@ class Insights extends React.Component {
           }}
         >
           We are a team of individuals with various backgrounds and
-          perspectives. We love to share our thoughts on the insurance
-          marketplace, technology and&nbsp;life.
+          perspectives. We love to share our thoughts on the business, technology and&nbsp;life.
         </Box>
       </Section>
       <Section sx={{ px: [null, null, 7] }}>

@@ -3,21 +3,25 @@ import Box from '@spraoi/base/Box';
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Section from './../components/Section';
+import { renderRichText } from "gatsby-source-contentful/rich-text"
+
+
+import * as postStyles from "./post.module.css"
+
 
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    
 
     return (
       <Section sx={{ textAlign: [null, null, 'center'] }}>
       <Box>
-        <div className="blog-post-container my-5">
+        <div className={postStyles.blog_post_container}>
           <div className="mt-5 container">
             <h1 className='blog-post-headline'>{post.title}</h1>
             <div className="blog-post-meta">
-              <p className="blog-post-author">{post.author.name}</p>
               <p
                 style={{
                   display: 'block',
@@ -27,6 +31,9 @@ class BlogPostTemplate extends React.Component {
               </p>
             </div>
             <hr></hr>
+            <div className={postStyles.text_container}>
+                <div className={postStyles.post_body}>{renderRichText(post.body)}</div>
+            </div>
           </div>
         </div>
       </Box>
@@ -34,6 +41,8 @@ class BlogPostTemplate extends React.Component {
     )
   }
 }
+
+
 
 export default BlogPostTemplate
 
@@ -45,6 +54,9 @@ export const pageQuery = graphql`
       }
       title
       postDate(formatString: "MMMM Do, YYYY")
+      body {
+        raw
+      }
     }
   }
 `

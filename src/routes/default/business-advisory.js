@@ -10,6 +10,7 @@ import Section from '../../components/Section';
 
 const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
   <>
+    
     <Section sx={{ pb: 0, textAlign: [null, null, 'center'] }}>
       <Box as="h1" sx={{ fontSize: [5, null, null, 6] }}>
         Advisory & Transformation

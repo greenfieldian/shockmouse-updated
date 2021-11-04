@@ -9,15 +9,17 @@ import IconFigure from '../../components/IconFigure';
 import Section from '../../components/Section';
 import { Helmet } from 'react-helmet';
 
+
+
 const Index = () => {
 
   return (
     <>
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>My Title</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet>
+        <meta charSet="utf-8" />
+        <title>Shockmouse Media | Digital Consulting Firm</title>
+        <link name="description" content="" />
+      </Helmet>
       <Section
         sx={{
           display: [null, null, null, 'flex'],
