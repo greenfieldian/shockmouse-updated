@@ -7,11 +7,17 @@ import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
 import IconFigure from '../../components/IconFigure';
 import Section from '../../components/Section';
+import { Helmet } from 'react-helmet';
 
 const Index = () => {
 
   return (
     <>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Title</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <Section
         sx={{
           display: [null, null, null, 'flex'],
