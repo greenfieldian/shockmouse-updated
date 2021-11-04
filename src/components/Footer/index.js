@@ -88,7 +88,7 @@ const Footer = () => (
       >
         <Link to="/">
           <Icon
-            svg="shockmouse-logo"
+            svg="logo-white"
             sx={{ color: 'offWhite', mt: 3, width: '10.25rem' }}
           />
         </Link>

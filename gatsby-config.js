@@ -55,6 +55,7 @@ module.exports = {
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
     'gatsby-plugin-meta-redirect',
