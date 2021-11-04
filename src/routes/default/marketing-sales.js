@@ -21,10 +21,7 @@ const ServicesPage = ({ location: { pathname } }) => (
           mx: 'auto',
         }}
       >
-        Our innovation as a service approach provides technology strategy,
-        management, design, development and deployment capabilities. When
-        combined with our machine learning expertise, the result is data-forward
-        engineering that can bring demonstrable change in&nbsp;mere&nbsp;weeks.
+        Through strong operational structures, technology systems and management support, we enable your sales and marketing staff to do what they do best - create customer journeys that lead to lasting relationships.
       </Box>
     </Section>
     {/* <Section sx={{ maxWidth: ['100%', null, null, '50%'], px: [0, null, 7] }}>
@@ -103,39 +100,34 @@ const ServicesPage = ({ location: { pathname } }) => (
           {
             description: (
               <>
-                We offer business outcome driven technology strategy services by
-                working closely with our clients. Our subject matter experts
-                bring industry best practices to the table to help improve
-                organizational and operational effectiveness while keeping
-                innovation as&nbsp;the&nbsp;focus.
+                We work to automate the sales process so internal stakeholders can dedicate their time and energy to facilitating valuable, personal relationships with customers.
               </>
             ),
-            title: <>Technology Strategy Services</>,
+            title: <>Marketing & Sales Automation</>,
           },
           {
             description: (
               <>
-                Our data services include, but are not limited to, working with
-                clients to outline their data strategy and translate strategies
-                into implementable solutions. Our offerings include: data
-                strategy, data lake implementation, data supply chain modeling
-                and implementation, integration with legacy systems using common
-                sense infrastructure, data replication, data backup, dataset
-                tracking and&nbsp;data&nbsp;auditing.
+                Studies have shown the importance of a well-developed customer journey. Providing customers with an adequate and fulfilling sales experience leads to greater conversions, and increased customer LTV. We work to develop customer journeys that meet the needs of internal stakeholders, while providing ultimate value to your customers.
               </>
             ),
-            title: <>Data Services</>,
+            title: <>Customer Journey Architecture</>,
           },
           {
             description: (
               <>
-                We provide the full gamut of software development services and
-                support from concept and ideation to launch and maintenance. We
-                do this while being agile and keeping our client’s requirements
-                in&nbsp;the&nbsp;forefront.
+                Customers today expect a connected and personalized service experience. Utilizing cloud resources, we develop omnichannel experiences that allow you to stay connected with your customers at every stage of their journey.
               </>
             ),
-            title: <>End to End Software Development</>,
+            title: <>Omnichannel Experiences</>,
+          },
+          {
+            description: (
+              <>
+                For product makers and sellers, digital commerce is vital to current and future survival. Our team helps you navigate e-commerce through pricing strategies, omnichannel experiences and product information management.
+              </>
+            ),
+            title: <>E-Commerce</>,
           },
           /* {
             description: (

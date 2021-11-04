@@ -24,11 +24,9 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
           mx: 'auto',
         }}
       >
-        Ingest, analyze, transform and visualize data in a single collaborative
-        workspace. Barrel combines the features of a model building platform,
-        transformations and pipeline tools into one intuitive infrastructure.
+        Re-vamped IT infrastructure. Customer-centric initiaves. We build long-term value through bold strategies and thoughtful execution.
       </Box>
-      <Box
+      {/*<Box
         as={Link}
         sx={{
           '&:hover': {
@@ -57,12 +55,12 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
             width: '1.5rem',
           }}
         />
-      </Box>
+        </Box>*/}
       {/* <ArrowLink link="/about-us" sx={{ mt: 6, display: 'inline-block' }}>
         Read more about our Case Studies
       </ArrowLink> */}
     </Section>
-    <Section sx={{ px: [0, null, 7] }}>
+    {/*<Section sx={{ px: [0, null, 7] }}>
       <Box
         as="ul"
         sx={{
@@ -102,23 +100,19 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
           />
         ))}
       </Box>
-    </Section>
+    </Section>*/}
     <Section sx={{ textAlign: [null, null, 'center'] }}>
-      <h2>Disability Claims&nbsp;Suite</h2>
+      <h2>Core Functions</h2>
       <Box
         as="p"
         sx={{
           lineHeight: 2,
           maxWidth: 'maxWidths.paragraphWider',
-          mt: 4,
+          mt: 0,
           mx: 'auto',
         }}
       >
-        This solution can leverage existing claims data in any format from the
-        vendor or proprietary system. While these functions are applicable
-        across products lines, STD and LTD Disability claims have very specific
-        business decision needs for which this ML model suite has been
-        optimized.
+
       </Box>
     </Section>
     <Section sx={{ px: [0, null, 7] }}>
@@ -135,70 +129,38 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
           {
             description: (
               <>
-                Segments incoming short term and long term disability claims
-                dynamically based on risk characteristics like diagnosis,
-                co-morbidity factors and return to work likelihood matched with
-                individual examiner experience and skill level for assignment.
+                ​​Our corporate transformation capabilities are tailor-made for tackling operational, financial and technology challenges head on. We come at it with a growth driven mindset – applying data analysis and modeling to each function for opportunities to optimize costs, operations, and value. Then, we coordinate a comprehensive strategy – working alongside you to get it done.   
               </>
             ),
             svg: 'pie-chart',
-            title: <>Segmentation and Assignment</>,
+            title: <>Corporate Transformation</>,
           },
           {
             description: (
               <>
-                Identifies short term disability claims like pregnancy with
-                consistent, predictable benefit pattern that can be automated to
-                adjudicate without examiner intervention.
+                IT systems are only as valuable as their implementation and costs allow. It no longer makes sense to take a one-size-fits-all approach. We specialize in transforming high-cost, low-return enterprise systems to agile, scalable and cost-effective business solutions. 
               </>
             ),
             svg: 'gear',
-            title: 'Auto Adjudication',
+            title: 'IT Strategies',
           },
           {
             description: (
               <>
-                Identifies short term and long term disability claims with
-                inconsistent patterns based on a number of factors such as
-                diagnosis, job description, industry and return to work
-                likelhood to flag for review by claims examiners.
+                Customers are a businesses most valuable asset, but have long been forgotten in the boardroom. We bring the customer back into the decision making process. Through analytics and personal connection, we develop a clear roadmap that aligns with core customer needs. Then, we help you implement.
               </>
             ),
             svg: 'thief',
-            title: 'Fraud Identification',
+            title: 'Customer Experience',
           },
           {
             description: (
               <>
-                Identifies long term disability claims with a higher propensity
-                to settle based on historically settled claims pattern and the
-                current claim characteristics.
+                The role and responsibilities of financial leaders has changed dramatically over the last few years. Financial leaders have transformed from purely financial advisors, to company wide strategic leaders. We combine our deep financial expertise with exclusive tools to help the core team members maximize value.
               </>
             ),
             svg: 'scale',
-            title: 'Settlement',
-          },
-          {
-            description: (
-              <>
-                Identifies short term disability claims with a high propensity
-                to become long term disability claims based on characteristics
-                at the mid-point of the short term disability case cycle.
-              </>
-            ),
-            svg: 'bridge',
-            title: 'Bridging',
-          },
-          {
-            description: (
-              <>
-                Identifies long term disability claims with a likelihood of
-                positive social security outcome, a pension and/or workers
-                compensation consideration.
-              </>
-            ),
-            svg: 'seesaw',
-            title: 'Offset',
+            title: 'Financial Analysis',
           },
         ].map((item, i) => (
           <Box
@@ -238,7 +200,7 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
       </Box>
     </Section>
     <Section sx={{ textAlign: [null, null, 'center'] }}>
-      <h2>Additional Models</h2>
+      <h2>Additional Touchpoints</h2>
       <Box
         as="p"
         sx={{
@@ -270,16 +232,7 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
                 retention measures.
               </>
             ),
-            title: 'Policyholder Lapse Retention Predictor',
-          },
-          {
-            description: (
-              <>
-                Reviews applications to identify patterns that indicate a
-                propensity of inconsistency within them.
-              </>
-            ),
-            title: <>Application Level&nbsp;Fraud</>,
+            title: 'Process Optimization',
           },
           {
             description: (
@@ -288,7 +241,7 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
                 at the individual advisor or institution level.
               </>
             ),
-            title: 'Distribution Fraud',
+            title: 'Business Model Change',
           },
           {
             description: (
@@ -297,7 +250,7 @@ const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
                 indicating operational inconsistencies.
               </>
             ),
-            title: <>Employee Level&nbsp;Fraud</>,
+            title: <>Employee Engagement</>,
           },
         ].map((item, i) => (
           <Box

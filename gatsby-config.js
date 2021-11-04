@@ -16,14 +16,6 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
     },
     {
-      options: { name: 'articles', path: 'src/articles' },
-      resolve: 'gatsby-source-filesystem',
-    },
-    {
-      options: { name: 'case-studies', path: 'src/case-studies' },
-      resolve: 'gatsby-source-filesystem',
-    },
-    {
       options: { name: 'data', path: 'src/data' },
       resolve: 'gatsby-source-filesystem',
     },
