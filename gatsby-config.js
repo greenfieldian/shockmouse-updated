@@ -16,24 +16,15 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-segment-js`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-XDTHKG333J",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        defer: false,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
-        // defaults to false
-        enableWebVitalsTracking: true,
-      },
+        prodKey: 'mg2wKxlJlnGBbLO6Vs9PoJhavypol3uu',
+        trackPage: false,
+        trackPageDelay: 50,
+        delayLoad: false,
+        delayLoadTime: 1000,
+        manualLoad: false,
+      }
     },
     {
       options: { name: 'data', path: 'src/data' },

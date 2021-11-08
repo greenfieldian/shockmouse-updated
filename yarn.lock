@@ -7838,6 +7838,11 @@ gatsby-plugin-remove-serviceworker@^1.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-serviceworker/-/gatsby-plugin-remove-serviceworker-1.0.0.tgz#9fb433bc8bd766e14e1d3711c4ac6f051e1dff7c"
   integrity sha1-n7QzvIvXZuFOHTcRxKxvBR4d/3w=
 
+gatsby-plugin-segment-js@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-segment-js/-/gatsby-plugin-segment-js-3.7.0.tgz#79bf36db55cde27362d1d89970203a87f8c32929"
+  integrity sha512-1q35nQqEK0ltzPaF31gvmxR11cRo5xRSoD4eaoxxKYeJCVzvgqLa+Wh64JRvau6jjimBDAehqMe0tGCgYeMLnw==
+
 gatsby-plugin-sharp@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.1.0.tgz#1757c6de4561345d4d5a9ff42ba9b130be399d86"
