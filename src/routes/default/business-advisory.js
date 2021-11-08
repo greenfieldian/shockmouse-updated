@@ -10,7 +10,11 @@ import Section from '../../components/Section';
 
 const MachineLearningSolutionsPage = ({ location: { pathname } }) => (
   <>
-    
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Advisory & Transformation | Shockmouse Media</title>
+        <link name="description" content="" />
+    </Helmet>
     <Section sx={{ pb: 0, textAlign: [null, null, 'center'] }}>
       <Box as="h1" sx={{ fontSize: [5, null, null, 6] }}>
         Advisory & Transformation

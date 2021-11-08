@@ -9,6 +9,11 @@ import * as contactStyles from "../../styles/contact.module.css"
 
 const Contact = ({ location: { pathname } }) => (
   <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact Us | Shockmouse Media</title>
+        <link name="description" content="" />
+    </Helmet>
     <Section
       sx={{
         display: [null, null, null, 'flex'],

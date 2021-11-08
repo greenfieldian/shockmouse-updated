@@ -14,6 +14,11 @@ class Insights extends React.Component {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Company Insights | Shockmouse Media</title>
+        <link name="description" content="" />
+      </Helmet>
       <Section sx={{ textAlign: [null, null, 'center'] }}>
         <h1>Company Insights</h1>
         <Box

@@ -7,6 +7,11 @@ import Section from '../../components/Section';
 
 const ServicesPage = ({ location: { pathname } }) => (
   <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Marketing & Sales | Shockmouse Media</title>
+        <link name="description" content="" />
+    </Helmet>
     <Section sx={{ textAlign: [null, null, 'center'] }}>
       <Box as="h1" sx={{ fontSize: [5, null, null, 6] }}>
         Marketing & Sales
