@@ -31,7 +31,7 @@ const Contact = ({ location: { pathname } }) => (
           we&rsquo;d love to hear&nbsp;from&nbsp;you.
         </Box>
       </Box>
-      <Box>
+      <div>
         <form name="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" 
       data-netlify-recaptcha="true">
         <input type="hidden" name="form-name" value="contact-form" />
@@ -45,7 +45,7 @@ const Contact = ({ location: { pathname } }) => (
           </label>
           <button type="submit">Submit</button>
         </form>
-      </Box>
+      </div>
     </Section>
   </>
 );
