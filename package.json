@@ -39,6 +39,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.1.0",
     "gatsby-plugin-extract-image-colors": "^0.0.14",
+    "gatsby-plugin-google-analytics": "^4.1.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.1.0",
     "gatsby-plugin-manifest": "^4.1.0",

@@ -7730,6 +7730,15 @@ gatsby-plugin-extract-image-colors@^0.0.14:
     color "^3.1.1"
     node-vibrant "^3.2.0-alpha"
 
+gatsby-plugin-google-analytics@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.1.0.tgz#c30f2ae38f48f9e0e850fadbd53ec4dda1ecdb89"
+  integrity sha512-ws29GRbcT7MXaPgckcQVuyqjhSAcTi8TYj94PJtYrffHUMC99aAe56nDeFqjnaA0aPHH+PfeulrKxzief7v7gg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    minimatch "3.0.4"
+    web-vitals "^1.1.2"
+
 gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
@@ -16504,6 +16513,11 @@ web-namespaces@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
+
+web-vitals@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
+  integrity sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
