@@ -31,92 +31,19 @@ const Contact = ({ location: { pathname } }) => (
           we&rsquo;d love to hear&nbsp;from&nbsp;you.
         </Box>
       </Box>
-      <FinalForm
-        onSubmit={async (values) => {
-          try {
-            await fetch(config.emailApi, {
-              body: JSON.stringify(values),
-              headers: { 'Content-Type': 'application/json' },
-              method: 'POST',
-            });
-          } catch (e) {
-            return { [FORM_ERROR]: e.message };
-          }
-        }}
-        render={(formContext) => (
-          <Box
-            as="form"
-            onSubmit={formContext.handleSubmit}
-            sx={{ mt: [7, null, null, 0] }}
-          >
-            <Box
-              sx={{
-                display: 'grid',
-                gridGap: 5,
-                gridTemplateColumns: '1fr 1fr',
-              }}
-            >
-              <Field
-                component={Input}
-                disabled={formContext.submitSucceeded}
-                label="First Name"
-                name="firstName"
-                validate={required}
-              />
-              <Field
-                component={Input}
-                disabled={formContext.submitSucceeded}
-                label="Last Name"
-                name="lastName"
-                validate={required}
-                wrapperSx={{ mt: 0 }}
-              />
-            </Box>
-            <Field
-              component={Input}
-              disabled={formContext.submitSucceeded}
-              label="Email"
-              name="email"
-              validate={composeValidations(required, email)}
-            />
-            <Field
-              component={TextArea}
-              disabled={formContext.submitSucceeded}
-              label="Message"
-              name="message"
-              rows={4}
-              validate={required}
-            />
-            {formContext.submitSucceeded ? (
-              <Box
-                sx={{
-                  alignItems: 'center',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  mt: 6,
-                }}
-              >
-                <Box
-                  as="span"
-                  sx={{ fontSize: 4, fontWeight: 'semibold', mr: 6 }}
-                >
-                  Message sent!
-                </Box>
-                <Icon svg="mail-sent" sx={{ width: '2.583rem' }} />
-              </Box>
-            ) : (
-              <Button
-                secondary
-                submitting={formContext.submitting}
-                sx={{ mt: 6, width: '100%' }}
-                type="submit"
-              >
-                Send message
-              </Button>
-            )}
-          </Box>
-        )}
-      />
+      <Box>
+        <form name="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <label>
+            First name
+            <input type="text" name="firstName" />
+          </label>
+          <label>
+            Last name
+            <input type="text" name="lastName" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </Box>
     </Section>
   </>
 );
