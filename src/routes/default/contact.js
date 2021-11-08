@@ -32,12 +32,12 @@ const Contact = ({ location: { pathname } }) => (
         </Box>
       </Box>
       <Box>
-        <form name="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <label>
+        <form name="contact-form" method="POST" data-netlify="true">
+          <label for="firstName">
             First name
             <input type="text" name="firstName" />
           </label>
-          <label>
+          <label for="lastName">
             Last name
             <input type="text" name="lastName" />
           </label>
