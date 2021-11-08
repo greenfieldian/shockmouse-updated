@@ -148,7 +148,7 @@ const Index = () => {
               ),
               icon: 'digital',
               iconSx: { mt: '0.75rem', width: ['9rem', null, null, '12rem'] },
-              link: '/customer-experience/',
+              link: '/digital/',
               title: <>Digital</>,
             },
             {
@@ -159,7 +159,7 @@ const Index = () => {
               ),
               icon: 'marketing',
               iconSx: { width: ['5rem', null, null, '7rem'] },
-              link: '/innovation/',
+              link: '/marketing-sales/',
               title: <>Marketing & Sales</>,
             },
           ].map((item) => (
