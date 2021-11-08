@@ -4,6 +4,7 @@ import React from 'react';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
 import Section from '../../components/Section';
+import { Helmet } from 'react-helmet';
 
 const ServicesPage = ({ location: { pathname } }) => (
   <>

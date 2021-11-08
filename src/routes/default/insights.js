@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import get from 'lodash/get'
 import ContactCTA from '../../components/ContactCTA';
 import Section from '../../components/Section';
+import { Helmet } from 'react-helmet';
 
 class Insights extends React.Component {
   

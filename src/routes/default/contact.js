@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Section from '../../components/Section';
 import Button from '@spraoi/base/Button';
+import { Helmet } from 'react-helmet';
 
 import * as contactStyles from "../../styles/contact.module.css"
 

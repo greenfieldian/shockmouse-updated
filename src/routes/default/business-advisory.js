@@ -1,10 +1,9 @@
 import Box from '@spraoi/base/Box';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
-import IconFigure from '../../components/IconFigure';
 import Section from '../../components/Section';
 // import ArrowLink from '../../components/ArrowLink';
 

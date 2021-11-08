@@ -1,7 +1,7 @@
 import Box from '@spraoi/base/Box';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import ContactCTA from '../../components/ContactCTA';
 import Icon from '../../components/Icon';
 import LinkList from '../../components/LinkList';
@@ -13,6 +13,11 @@ const AboutUsPage = ({ location: { pathname } }) => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Us | Shockmouse Media</title>
+        <link name="description" content="" />
+      </Helmet>
       <Section>
         <Box
           sx={{
