@@ -1,12 +1,30 @@
 .blog_post_container {
-    width: 67%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
+.blog_post_container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 .text_container {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
+    line-height: 1.3;
 }
 .post_body {
     white-space: pre-wrap;
+    margin-top: 1rem;
+}
+.text_container p {
+    margin: 0 0 20px;
+}
+
+@media (min-width: 1024px) {
+    .blog_post_container {
+        width: 67%;
+    }
+    .blog_post_container h1 {
+        font-size: 3rem;
+    }
 }
