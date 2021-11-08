@@ -32,7 +32,8 @@ const Contact = ({ location: { pathname } }) => (
         </Box>
       </Box>
       <Box>
-        <form name="contact-form" method="POST" data-netlify="true">
+        <form name="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" 
+      data-netlify-recaptcha="true">
           <label for="firstName">
             First name
             <input type="text" name="firstName" />
