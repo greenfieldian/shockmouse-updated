@@ -1,15 +1,11 @@
 import Box from '@spraoi/base/Box';
-import Button from '@spraoi/base/Button';
-import Input from '@spraoi/base/Input';
 import PropTypes from 'prop-types';
 import React from 'react';
-import TextArea from '@spraoi/base/TextArea';
-import { FORM_ERROR } from 'final-form';
-import { Field, Form as FinalForm } from 'react-final-form';
-import { composeValidations, email, required } from '@spraoi/validations';
-import Icon from '../../components/Icon';
 import Section from '../../components/Section';
-import config from '../../config.json';
+import Button from '@spraoi/base/Button';
+
+import * as contactStyles from "../../styles/contact.module.css"
+
 
 const Contact = ({ location: { pathname } }) => (
   <>
@@ -31,20 +27,30 @@ const Contact = ({ location: { pathname } }) => (
           we&rsquo;d love to hear&nbsp;from&nbsp;you.
         </Box>
       </Box>
-      <div>
-        <form name="contact-form" method="post" data-netlify="true">
+        <form name="contact-form" method="post" data-netlify="true" className={contactStyles.form}>
           <input type="hidden" name="form-name" value="contact-form" />
-          <label for="firstName">
+          <label for="firstName" className={contactStyles.inputlabel}>
             First name
             <input type="text" name="firstName" />
           </label>
-          <label for="lastName">
+          <label for="lastName" className={contactStyles.inputlabel}>
             Last name
             <input type="text" name="lastName" />
           </label>
-          <button type="submit">Submit</button>
+          <label for="email" className={contactStyles.inputlabel}>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label for="phone" className={contactStyles.inputlabel}>
+            Company
+            <input type="text" name="company" />
+          </label>
+          <label for="message" className={contactStyles.label}>
+            Message
+            <textarea type="text" name="message" rows="4"/>
+          </label>
+          <Button type="submit" className={contactStyles.submit}>Submit</Button>
         </form>
-      </div>
     </Section>
   </>
 );

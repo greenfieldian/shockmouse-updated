@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputlabel, .label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.form input, textarea{
+    flex-basis: 100%;
+    padding: .75rem;
+    margin-top: .5rem;
+    border: 1px solid rgb(209, 208, 210);
+}
+.submit {
+    flex-basis: 100%;
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .form {
+        justify-content: space-between;
+    }
+    .inputlabel {
+        flex-basis: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .form {
+        flex-basis: 48%;
+    }
+}
