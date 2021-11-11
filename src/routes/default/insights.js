@@ -36,7 +36,7 @@ class Insights extends React.Component {
           perspectives. We love to share our thoughts on the business, technology and&nbsp;life.
         </Box>
       </Section>
-      <Section sx={{ px: [null, null, 7] }}>
+      <Section>
         <Box>
           <div className="container">
             {/*<h2 className="section-headline">Recent articles</h2>*/}
